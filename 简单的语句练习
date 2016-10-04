@@ -1,0 +1,73 @@
+package hello;
+
+import java.util.Scanner;
+
+public class Main {
+
+	private static Scanner in;
+
+	public static void main(String[] args) {
+in = new Scanner(System.in);
+int balance=0;
+        double a=1.0;
+        double b=0.4+0.6;
+//		读入投币金额
+  		while(true)
+  		{
+			System.out.print("请投币：");  
+			int amount=in.nextInt();
+			balance+=amount;
+		    System.out.println(amount);
+			System.out.println(amount>=10);
+			System.out.println(5==5.0);
+	     	System.out.println(a);
+            System.out.println(b);
+			System.out.println(a==b);
+			System.out.println(Math.abs(a-b)<1e-6);
+	//		打印车票
+			if(balance>=10)
+			{
+			System.out.println("＊＊＊＊＊＊＊＊＊＊＊＊");
+			System.out.println("＊＊java城际铁路专线＊＊");
+			System.out.println("＊   无指定票座位    ＊");
+			System.out.println("＊   票价：10元     ＊");
+	     	System.out.println("＊＊＊＊＊＊＊＊＊＊＊＊");
+			
+	////		计算并打印找零
+			System.out.println("找零："+(balance-10));
+			balance=0;
+			}
+
+  		}
+//        final int MINOR=35;
+//        System.out.print("请输入你的年龄：");
+//        int age=in.nextInt();
+//        System.out.print("你的年龄是"+age);
+//        if(age<MINOR)
+//        {
+//        	System.out.println("年轻是美好的！");
+//        }
+//        System.out.println("年龄决定了你的精神世界，好好珍惜吧！");
+//          int x;
+//          int y;
+//          System.out.println("");
+//          System.out.println(max);
+//          int type=in.nextInt();
+//          switch(type)
+//          {
+//          case 1:
+//          case 2:
+//          System.out.println("你好");
+//          break;
+//          case 3:
+//          System.out.println("晚上好");
+//          case 4:
+//          System.out.println("再见");
+//          break;
+//          default:
+//          System.out.println("啊，什么啊！");
+//          break;
+//          }
+	}
+	
+}
